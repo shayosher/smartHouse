@@ -6,7 +6,7 @@ export default function Room(props) {
     const [flag, setFlag] = useState(false);
 
     const show = () => {
-        if (flag == false) {
+        if (flag) {
             return <div> <AddProduct index={props.index} addProduct={props.addProduct} /> </div>
         }
         else {
